@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: coral;
+}
+header{
+  padding: 5px;
+  margin-left: 150px;
+  
+}
+input{
+  margin-left:150px;
+}
+button{
+  margin-left:225px;
+  
+}
