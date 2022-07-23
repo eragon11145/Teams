@@ -12,14 +12,14 @@ move3=['Flare Blitz','Thunder Wave','Knock Off','Brick Break','Volt Switch','Roc
 move4=['Darkest Lariat','Spirit Break','Wood Hammer','Foul Play','Protect','Protect','Protect','Protect','Protect','Protect','Aerial Ace','Taunt','Protect','Ice Beam','Detect','Protect','Protect','Protect','Protect','Protect','Protect','Protect','Detect','','Protect','Protect','Protect','Protect']
 stats=['HP','ATK','DEF','SPATK','SPDEF','SPD']
 function Randomize(){
-  x=Math.floor(22*Math.random());
-  y=Math.floor(22*Math.random());
+  x=Math.floor(21*Math.random());
+  y=Math.floor(21*Math.random());
   a=Math.floor(28*Math.random());
   b=Math.floor(28*Math.random());
   c=Math.floor(28*Math.random());
   d=Math.floor(28*Math.random());
   while ((y==x)||((restricteds[x]=='Calyrex-Shadow')&&(restricteds[y]=='Calyrex-Ice'))||((restricteds[y]=='Calyrex-Shadow')&&(restricteds[x]=='Calyrex-Ice'))){
-    y=Math.floor(22*Math.random());
+    y=Math.floor(21*Math.random());
   }
   while ((b==a)){
     b=Math.floor(28*Math.random());
@@ -76,11 +76,11 @@ function Randomize(){
   while ((item6==item3)||(item6==item1)||(item6==item2)||(item6==item4)||(item6==item5)){
     item6=item[Math.floor(11*Math.random())]
   }
-  document.getElementById("pokemon1").innerHTML=restricteds[x] +' @ '+item1+ ' '+rmove1[x]+' '+rmove2[x]+' '+rmove3[x]+' '+rmove4[x]
-    document.getElementById('pokemon2').innerHTML=restricteds[y]+' @ '+item2+ ' '+rmove1[y]+' '+rmove2[y]+' '+rmove3[y]+' '+rmove4[y]
-  document.getElementById("pokemon3").innerHTML=normal[a]+' @ '+item3+ ' '+move1[a]+' '+move2[a]+' '+move3[a]+' '+move4[a]
-    document.getElementById('pokemon4').innerHTML=normal[b]+' @ '+item4+' '+move1[b]+' '+move2[b]+' '+move3[b]+' '+move4[b]
-    document.getElementById("pokemon5").innerHTML=normal[c]+' @ '+item5+' '+move1[c]+' '+move2[c]+' '+move3[c]+' '+move4[c]
-    document.getElementById('pokemon6').innerHTML=normal[d]+' @ '+item6+' '+move1[d]+' '+move2[d]+' '+move3[d]+' '+move4[d]
+  document.getElementById("pokemon1").innerHTML=restricteds[x] +' @ '+item1+ '<br>'+rmove1[x]+'<br>'+rmove2[x]+'<br>'+rmove3[x]+'<br>'+rmove4[x]
+    document.getElementById('pokemon2').innerHTML=restricteds[y]+' @ '+item2+ '<br>'+rmove1[y]+'<br>'+rmove2[y]+'<br>'+rmove3[y]+'<br>'+rmove4[y]
+  document.getElementById("pokemon3").innerHTML=normal[a]+' @ '+item3+ '<br>'+move1[a]+'<br>'+move2[a]+'<br>'+move3[a]+'<br>'+move4[a]
+    document.getElementById('pokemon4').innerHTML=normal[b]+' @ '+item4+'<br>'+move1[b]+'<br>'+move2[b]+'<br>'+move3[b]+'<br>'+move4[b]
+    document.getElementById("pokemon5").innerHTML=normal[c]+' @ '+item5+'<br>'+move1[c]+'<br>'+move2[c]+'<br>'+move3[c]+'<br>'+move4[c]
+    document.getElementById('pokemon6').innerHTML=normal[d]+' @ '+item6+'<br>'+move1[d]+'<br>'+move2[d]+'<br>'+move3[d]+'<br>'+move4[d]
 
   }
