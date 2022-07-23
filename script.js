@@ -76,29 +76,11 @@ function Randomize(){
   while ((item6==item3)||(item6==item1)||(item6==item2)||(item6==item4)||(item6==item5)){
     item6=item[Math.floor(11*Math.random())]
   }
-  document.getElementById("pokemon1").innerHTML=restricteds[x] +' @ '+item1+ ' '+rmove1[x]+' 
-  '+rmove2[x]+' 
-  '+rmove3[x]+' 
-  '+rmove4[x]
-    document.getElementById('pokemon2').innerHTML=restricteds[y]+' @ '+item2+ ' '+rmove1[y]+' 
-  '+rmove2[y]+' 
-  '+rmove3[y]+' 
-  '+rmove4[y]
-  document.getElementById("pokemon3").innerHTML=normal[a]+' @ '+item3+ ' '+move1[a]+' 
-  '+move2[a]+' 
-  '+move3[a]+' 
-  '+move4[a]
-    document.getElementById('pokemon4').innerHTML=normal[b]+' @ '+item4+' '+move1[b]+' 
-  '+move2[b]+' 
-  '+move3[b]+' 
-  '+move4[b]
-    document.getElementById("pokemon5").innerHTML=normal[c]+' @ '+item5+' '+move1[c]+' 
-  '+move2[c]+' 
-  '+move3[c]+' 
-  '+move4[c]
-    document.getElementById('pokemon6').innerHTML=normal[d]+' @ '+item6+' '+move1[d]+' 
-  '+move2[d]+' 
-  '+move3[d]+' 
-  '+move4[d]
+  document.getElementById("pokemon1").innerHTML=restricteds[x] +' @ '+item1+ ' '+rmove1[x]+' '+rmove2[x]+' '+rmove3[x]+' '+rmove4[x]
+    document.getElementById('pokemon2').innerHTML=restricteds[y]+' @ '+item2+ ' '+rmove1[y]+' '+rmove2[y]+' '+rmove3[y]+' '+rmove4[y]
+  document.getElementById("pokemon3").innerHTML=normal[a]+' @ '+item3+ ' '+move1[a]+' '+move2[a]+' '+move3[a]+' '+move4[a]
+    document.getElementById('pokemon4').innerHTML=normal[b]+' @ '+item4+' '+move1[b]+' '+move2[b]+' '+move3[b]+' '+move4[b]
+    document.getElementById("pokemon5").innerHTML=normal[c]+' @ '+item5+' '+move1[c]+' '+move2[c]+' '+move3[c]+' '+move4[c]
+    document.getElementById('pokemon6').innerHTML=normal[d]+' @ '+item6+' '+move1[d]+' '+move2[d]+' '+move3[d]+' '+move4[d]
 
   }
